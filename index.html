@@ -8,10 +8,21 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-      <h1>JS Maze</h1>
-    </header>
-    <center><canvas id="canvas"></canvas></center>
-    <script src="maze.js"></script>
+    <div class="container">
+      <header>
+        <h1>JS Maze</h1>
+      </header>
+      <div class="top-bar">
+        <form class="game-level-form my-form">
+          <div class="form-group">
+            <button class="start-game btn" type="submit" style="float:right;">Start Game</button>
+            <select class="game-levels"></select>
+        </div>
+      </form>
+      </div>
+      <center><canvas id="canvas"></canvas></center>
+    </div>
+    
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
